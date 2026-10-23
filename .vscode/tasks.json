@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run QR Code Studio (prebuilt, no Node.js)",
+      "type": "shell",
+      "command": "py",
+      "args": [
+        "-m",
+        "http.server",
+        "5173",
+        "--directory",
+        "dist"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
